@@ -1,0 +1,26 @@
+{'data_file': 'RBCI_Files/freebayes_D2.filtered.rbci'
+ 'out_dir': 'Output/'
+ 'verbose': False
+ 'chrom': 'Chr04'
+ 'start': 0
+ 'stop': 0
+ 'n_res': 45
+ 'n_sus': 178
+ 'with_parents': False
+ 'plots': True
+ 'min_qual': 600
+ 'filter_flags': 'PASS;NoSBtag
+PASS;NoSBtag;NonPhasingPoolHomozygous'
+ 'trust_gatk': False
+ 'dp_max_ratio': 1.5
+ 'hs_max': 0.0
+ 'resolution': 100000
+ 'min_segr_pv': 0
+ 'chrom_size': 0
+ 'window_size': 5000000.0
+ 'phenoNoise': 1e-10
+ 'EMAR_SP': 3.0
+ 'EX_CO_Chrom': 2
+ 'config_file': 'config_1.yaml'
+ 'opt_eps': False
+ 'opt_recombination': False}

@@ -1,0 +1,41 @@
+vcffilter:
+   filters:
+     -i 'QUAL >= 10 &&
+         GT[0]="0/0" && GT[1]="1/1" && GT[2]="1/1" && GT[3]!="1/1" || GT[0]="1/1" && GT[1]="0/0" && GT[2]="0/0" && GT[3]!="0/0" '
+     -s 'con-all,D2,D2_F2_tt,D2_F2_TT'
+     -m '2'
+     -M '2'
+
+perl_rbci:
+   --phasing_sample D2_F2_tt
+   --phenotype_plus_pool D2_F2_tt
+   --phenotype_minus_pool D2_F2_TT
+
+rbc_mapper:
+#   --file mapper_test.rbci
+   --outdir Output/
+   --n_res 45
+   --n_sus 178
+   --chromosome Chr04
+   --max-hs 0.0
+   --start 0 
+   --stop 0
+   --with_parents False
+   --plots True
+   --dp-max-ratio 1.5
+   --trust-gaTK False
+   --filter-flags PASS\;NoSBtag\,PASS\;NoSBtag\;NonPhasingPoolHomozygous
+   --min-qual 600
+   --resolution 100000
+   --phenoNoise 1E-10
+   --min_segr_pv 0
+   --chrom_size 0
+   --window_size 5000000.0
+   --opt_eps False 
+   --opt_recombination False 
+   --EMAR_SusPool 3
+   --Expected_CrossOvers 2
+
+chromosomes: Chr04
+
+vcf_file: freebayes_D2.filtered   

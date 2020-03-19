@@ -1,0 +1,27 @@
+%YAML 1.0
+---
+data_file: freebayes_D2.filtered.rbci
+out_dir: mapper_test/
+n_res: 45
+n_sus: 178
+chrom: Chr04 
+hs_max: 0.0
+start: 0 
+stop: 0
+with_parents: False
+plots: True
+dp_max_ratio: 5
+trust_gatk: False
+filter_flags: PASS;NoSBtag,PASS;NoSBtag;NonPhasingPoolHomozygous 
+min_qual: 600
+resolution: 100000
+phenoNoise: 1E-10
+min_segr_pv: 0
+chrom_size: 0
+window_size: 5000000.0
+opt_eps: False
+opt_recombination: False
+EMAR_SP: 100
+EX_CO_Chrom: 2
+config_file: config_1.yaml
+

@@ -1,0 +1,10 @@
+vcf/*.vcf
+freebayes_D2.*
+mapper_test.*
+mapper_test/*
+RBCI_Files/*.rbci
+vcfs_for_mutmap.zip
+__MACOSX/*
+-/*
+filtered_vcf_output/*.vcf
+
